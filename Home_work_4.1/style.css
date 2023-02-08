@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 15%
+}
+
+.head-container {
+  width: 100%;
+  display: flex;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+header .head-container .logo {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+  margin-right: 6%;
+
+}
+
+.nav {
+  padding: 0;
+  margin: 0
+}
+
+.nav li {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 2em;
+
+
+}
+
+#log-in-btn {
+
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  font-size: x-large;
+  font-weight: 1000;
+  min-height: 3em;
+  letter-spacing: 1px;
+}
+
+#log-in-btn:hover {
+  background-color: darkcyan;
+  color: black;
+}
+
+#sign-up-btn {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  font-size: x-large;
+  font-weight: 1000;
+  min-height: 2em;
+
+}
+
+#sign-up-btn:hover {
+  background-color: darkcyan;
+}
+
+.actions button {
+  min-width: 88px;
+  height: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/background.png"), url("img/Rectangle.png");
+  background-position: 98%, 115%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5%;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-info h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 63px;
+  line-height: 76px;
+  margin-left: 3%;
+
+}
+
+.section-info h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 33px;
+  width: fit-content;
+  margin-left: 3%;
+  margin-top: 0%;
+  order: 3;
+}
+
+.btn-info {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  width: 277px;
+  height: 66px;
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+  box-shadow: 10px 10px 10px rgb(226, 203, 231);
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  margin-block: 120px;
+}
+
+.btn-info:hover {
+  transform: skew(-20deg);
+}
+
+a:hover {
+  background-color: darkcyan;
+}
+
+@media (min-width: 1000px) {
+  .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding-right: 3%;
+    width: fit-content;
+
+
+  }
+
+  .head-container {
+    display: flexbox;
+    margin-left: 0%;
+  }
+
+  .section-info h4 {
+    width: 33%;
+    line-height: 1em;
+    font-size: 21px;
+    font-weight: 400;
+    padding-top: 1em;
+  }
+
+  .btn-info {
+    order: 3;
+  }
+
+  .nav {
+
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    height: 125px;
+  }
+
+  .head-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    justify-content: space-between;
+  }
+
+  .nav li {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    padding-right: 100px;
+  }
+
+  #sign-up-btn {
+    min-height: 1em;
+    font-size: 21px;
+    font-weight: 100;
+
+  }
+
+  #log-in-btn {
+    min-height: 1em;
+    font-size: 21px;
+    font-weight: 100;
+  }
+}

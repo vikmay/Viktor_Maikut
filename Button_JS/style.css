@@ -1,0 +1,21 @@
+.body {
+    margin: 0;
+}
+
+.block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.parent-block {
+    width: 23%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #000;
+
+}

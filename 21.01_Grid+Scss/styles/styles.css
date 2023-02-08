@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+main {
+  width: 90%;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #ffd500;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.grid-container :nth-child(5) {
+  grid-area: 1/5/3/7;
+}
+.grid-container :nth-child(10) {
+  grid-area: 3/1/5/3;
+}
+.grid-container :nth-child(16) {
+  grid-area: 4/4/6/6;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card .bg-image {
+  min-width: 50%;
+  background-image: url(../img/France.jpg);
+  background-size: cover;
+  min-height: 180px;
+  height: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card .card-name-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(17, 43, 60);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.card .card-name-container .card-name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #F2C94C;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.card .card-name-container .card-text {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #F2F2F2;
+  opacity: 0.6;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-container :nth-child(5) {
+    grid-area: 1/3/3/5;
+  }
+  .grid-container :nth-child(10) {
+    grid-area: 4/1/6/3;
+  }
+  .grid-container :nth-child(16) {
+    grid-area: 7/2/9/4;
+  }
+}
+@media screen and (max-width: 930px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-container :nth-child(5) {
+    grid-area: 1/2/3/4;
+  }
+  .grid-container :nth-child(10) {
+    grid-area: 5/1/7/3;
+  }
+  .grid-container :nth-child(16) {
+    grid-area: 9/2/11/4;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container :nth-child(5) {
+    grid-area: unset;
+  }
+  .grid-container :nth-child(10) {
+    grid-area: unset;
+  }
+  .grid-container :nth-child(16) {
+    grid-area: unset;
+  }
+}/*# sourceMappingURL=styles.css.map */

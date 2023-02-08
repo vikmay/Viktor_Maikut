@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 802px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 4rem;
+
+}
+.female {
+    display: flex;
+    align-self: flex-start;
+}
+.male {
+    display: flex;
+    align-self: flex-end;
+}
+
+.female .message {
+    background-color: aqua;
+    border-radius: 20px 20px 20px 0;
+}
+.male .message {
+    background-color: rgb(244, 186, 244);
+    border-radius: 20px 20px 0 20px;
+}
+.human {
+    display: flex;
+    align-items: center;
+}
+.human-info {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.msg-text {
+    width: max-content;
+}
+.name {
+    font-size: larger;
+}
+.time {
+    opacity: 0.4;
+}
