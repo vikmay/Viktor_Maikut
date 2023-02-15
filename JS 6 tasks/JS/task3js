@@ -1,0 +1,5 @@
+// 3. Функція обєднання трьох окремих цифр у одне число
+
+function combineDigits(digit1, digit2, digit3) {
+    return parseInt(digit1.toString() + digit2.toString() + digit3.toString());
+  };
