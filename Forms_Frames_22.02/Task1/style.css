@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .card-wrapper {
+  position: relative;
+  width: 500px;
+  height: 320px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(144, 205, 209);
+  background-image: url(moon_flag.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: 120% 135%;
+  border-radius: 2%;
+}
+section .card-wrapper .cc-details {
+  position: absolute;
+  left: -3%;
+  top: 7%;
+  width: 300px;
+  background-color: rgb(214, 104, 26);
+  color: aliceblue;
+  font-size: 10px;
+  padding: 0.8em;
+  letter-spacing: 1px;
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+}
+section .card-wrapper .input-container {
+  width: 50%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  opacity: 0.5;
+  margin-top: 10%;
+}
+section .card-wrapper .bg-img {
+  width: 200px;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  left: 72%;
+  top: 47%;
+  overflow: hidden;
+}
+section .card-wrapper label {
+  font-size: 12px;
+}
+section .card-wrapper input {
+  height: 2em;
+  background-color: rgb(175, 210, 212);
+  border: none;
+  margin: 2% 0 5% 0;
+}
+section .card-wrapper .date-cvn-label-container {
+  display: flex;
+  justify-content: space-between;
+}
+section .card-wrapper .date-cvn-label-container label {
+  padding-right: 10%;
+}
+section .card-wrapper .date-cvn-inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+section .card-wrapper .date-cvn-inputs-container input {
+  width: 30%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="library.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="section-wrapper">
+        <section>
+          <div>
+            <span>Inputs</span>
+            <div class="inputs-container">
+              <div class="default-txt-container">
+                <input
+                  class="default"
+                  type="text"
+                  placeholder="Enter some text"
+                />
+              </div>
+
+              <div class="valid-txt-container">
+                <input class="valid-txt" type="text" placeholder="valid text" />
+
+                <img
+                  class="input-val-inval-sign"
+                  src="valid.png"
+                  alt="checked"
+                />
+              </div>
+
+              <div class="invalid-txt-container">
+                <input
+                  class="invalid-txt"
+                  type="text"
+                  placeholder="invalid text"
+                />
+                <img
+                  class="input-val-inval-sign"
+                  src="invalid.png"
+                  alt="red cross"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="checkboxes-container">
+            <span class="chbxs-title">Check boxes</span>
+            <label class="switch">
+              <input type="checkbox" id="chbx" />
+              <span class="slider"></span>
+            </label>
+            <label for="chbx">Subscribe</label>
+
+            <label class="switch">
+              <input type="checkbox" checked id="chbx" />
+              <span class="slider"></span>
+            </label>
+            <label for="chbx">Subscribe</label>
+          </div>
+
+          <div class="radio-btns-container">
+            <span>Radio buttons</span>
+            <div class="radio-btn-container">
+              <label for="">Gender: </label>
+              <input checked type="radio" name="gender" id="male" />
+              <label id="l-male" for="male">Male</label>
+
+              <input type="radio" name="gender" id="female" />
+              <label id="l-female" for="female">Female</label>
+            </div>
+          </div>
+
+          <div>
+            <span>Buttons</span>
+            <div class="btns-container">
+              <button class="btn active">Active</button>
+              <button class="btn active-hover">Hover</button>
+              <button class="btn danger">Danger</button>
+              <button class="btn danger-hover">Hover</button>
+              <button disabled class="btn disabled">Disabled</button>
+              <button class="round-btn plus">+</button>
+              <button class="round-btn minus">-</button>
+            </div>
+          </div>
+
+          <div>
+            <span>Text area</span>
+            <div class="txt-area-container">
+              <label for="txt-area"></label>
+              <textarea
+                name="txt-area"
+                id="txt-area"
+                cols="65"
+                rows="8"
+                placeholder="Enter some text"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

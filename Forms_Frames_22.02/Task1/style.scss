@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-wrapper {
+        position: relative;
+        width: 500px;
+        height: 320px;
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(144, 205, 209);
+        background-image: url(moon_flag.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: 120% 135%;
+        border-radius: 2%;
+
+        .cc-details {
+            position: absolute;
+            left: -3%;
+            top: 7%;
+            width: 300px;
+            background-color: rgb(214, 104, 26);
+            color: aliceblue;
+            font-size: 10px;
+            padding: 0.8em;
+            letter-spacing: 1px;
+            padding-inline-start: 10%;
+        }
+
+        .input-container {
+            width: 50%;
+            padding-left: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 2%;
+            opacity: 0.5;
+            margin-top: 10%;
+        }
+
+        .bg-img {
+            width: 200px;
+            position: absolute;
+            object-fit: contain;
+            left: 72%;
+            top: 47%;
+            overflow: hidden;
+        }
+
+
+        label {
+            font-size: 12px;
+        }
+
+        input {
+            height: 2em;
+            background-color: rgb(175, 210, 212);
+            border: none;
+            margin: 2% 0 5% 0;
+        }
+
+
+        .date-cvn-label-container {
+            display: flex;
+            justify-content: space-between;
+
+            label {
+                padding-right: 10%;
+            }
+        }
+
+        .date-cvn-inputs-container {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 30%;
+            }
+        }
+    }
+}

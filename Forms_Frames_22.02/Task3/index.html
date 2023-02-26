@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <form>
+            <div class="form-wrapper">
+
+                <div class="reg-form">
+
+                    <h2>Registration form</h2>
+                    <div class="username-container"><img src="username.png" alt="username_logo">
+                        <input type="text" id="username" name="" placeholder="Username" required />
+                    </div>
+
+                    <div class="email-container"><img src="email.png" alt="email_logo">
+                        <input type="email" id="email" name="email" placeholder="Email address" required />
+                    </div>
+
+                    <div class="password-container">
+                        <div>
+                            <img src="pswd.png" alt="password_logo">
+                            <input type="password" id="password" name="" placeholder="Password" required />
+                        </div>
+
+                        <div class="conf-pass-container">
+                            <input type="password" id="confirm-password" name="" placeholder="Confirm password"
+                                required />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="personal-details-container">
+
+                    <h2>Personal details</h2>
+                    <div class="fname-lname-container">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required />
+                    </div>
+
+                    <div class="gender-date-container">
+                        <select id="gender" name="gender" required>
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" required />
+                    </div>
+                </div>
+
+                <div class="checkboxes">
+
+                    <div class="news-offers-container">
+                        <input type="checkbox" id="news-offers" name="" />
+                        <label for="news-offers">I want to receive special news and offers</label>
+                    </div>
+
+                    <div class="terms-cond-container"> <input type="checkbox" id="terms-conditions"
+                            name="terms-conditions" required />
+                        <label for="terms-conditions">I agree with the Terms and Conditions</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="btn-container"><button type="submit">SUBMIT</button></div>
+        </form>
+    </section>
+</body>
+
+</html>
