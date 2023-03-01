@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cat-sec-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+
+    background-color: #ccc;
+    font-size: 10px;
+}
+
+.cat-main-container {
+    width: 95%;
+    display: grid;
+
+    gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 8fr 1fr;
+    grid-template-areas:
+        "upper-text cat-main"
+        "main-text cat-main"
+        "main-text cat-main"
+        "main-text cat-main"
+        "main-text cat-secondary"
+        "main-text cat-secondary"
+        "main-text cat-secondary"
+        "main-text cat-secondary"
+}
+
+.upper-text {
+    height: fit-content;
+    grid-area: upper-text;
+}
+
+.main-text {
+    height: 100%;
+    grid-area: main-text;
+}
+
+
+.cat-main-card {
+    width: 100%;
+
+    height: fit-content;
+    grid-area: cat-main;
+}
+
+.cat-zoom-card {
+    width: 100%;
+
+    height: fit-content;
+    grid-area: cat-secondary;
+}
+
+.cat-pic-wrapper {
+    width: 100%;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.cat-text-container {
+    height: fit-content;
+    background-color: rgb(0, 85, 135);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    padding: 1em 0;
+}
+
+.cat-main-desc {
+    display: block;
+    font-size: 9px;
+    margin-right: 7px;
+    text-align: right;
+}
+
+.cat-zoom-desc {
+    display: block;
+    font-size: 9px;
+    margin-right: 7px;
+    text-align: right;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .cat-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        align-items: center;
+        grid-template-areas:
+            "upper-text upper-text"
+            "cat-main cat-secondary"
+            "main-text main-text"
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .cat-main-container {
+        grid-template: none/1fr;
+        align-items: center;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "upper-text"
+            "cat-main"
+            "cat-secondary"
+            "main-text"
+    }
+}
