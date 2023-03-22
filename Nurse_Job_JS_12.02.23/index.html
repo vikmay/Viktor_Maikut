@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Firstname="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <main>
+
+        <form class="form-container">
+            <div class="form-wrapper">
+
+                <legend class="form-legend">Шукаєте роботу чи няню?</legend>
+                <div class="top-btn-container">
+                    <input type="button" value="Шукаю роботу" class="seek job">
+                    <input type="button" value="Шукаю няню" class="seek nurse">
+                </div>
+                <div class="Firstname-Lastname-container">
+                    <input class="form-input" id="Firstname" type="text" placeholder="Firstname">
+                    <input class="form-input" id="Lastname" type="text" placeholder="Lastname">
+                </div>
+
+                <div class="form-field">
+                    <input class="form-input" id="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-field pass-container">
+                    <input class="form-input" id="password" type="password" placeholder="Enter password">
+                    <img class="pass-eye" src="img/Password_eye.png" alt="">
+                </div>
+                <div class="form-field pass-container">
+                    <input class="form-input" id="password2" type="password" placeholder="Confirm password">
+                    <img class="pass-eye" src="img/Password_eye.png" alt="">
+                </div>
+
+                <div class="chbx-container"><input type="checkbox" id="checkbox">
+                    <label for="checkbox"><span class="chbx-txt">
+                            Так, я розумію та погоджуюся з Умовам обслуговування,<br> включаючи
+                            <a href="#">Угодукористувача</a> та <a href="#">Політику конфіденційності</a></span>
+                    </label>
+                </div>
+                <div id="output"></div>
+
+                <div class="reg-btn-container">
+                    <button class="not-active" id="submit">Зареєструватись</button>
+                </div>
+                <div class="login-container">
+                    <a id="registered" href="#">Вже зареєстровані?</a>
+                    <a id="login" href="#">Увійти</a>
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </main>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+.header h1,
+.footer h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.reg-btn-container, .form-container, .header,
+.footer, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Firstname-Lastname-container, .form-field, .top-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 100px);
+}
+
+.header,
+.footer {
+  color: aliceblue;
+  background-color: #1E3173;
+  height: 50px;
+}
+
+.top-btn-container {
+  padding: 1px;
+  border-radius: 48px;
+  background-color: #EFEFEF;
+}
+.top-btn-container .seek {
+  height: 48px;
+  flex: 1;
+  border: none;
+  border-radius: 48px;
+}
+.top-btn-container .job {
+  flex: 1;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.top-btn-container .nurse {
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.not-checked {
+  background-color: none;
+}
+
+.checked {
+  background-color: #fff;
+}
+
+.form-container {
+  width: 500px;
+  display: flex;
+  border: 1px solid rgba(30, 49, 115, 0.3);
+  border-radius: 12px;
+}
+
+.form-wrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  gap: 20px;
+  padding: 6% 0;
+}
+.form-wrapper .form-legend {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  align-self: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(30, 49, 115, 0.3);
+  padding-left: 4%;
+}
+
+.pass-container {
+  position: relative;
+}
+
+.pass-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.Firstname-Lastname-container {
+  gap: 4%;
+}
+.Firstname-Lastname-container .form-checkbox {
+  margin-top: 20px;
+}
+
+.chbx-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+}
+.chbx-container #checkbox {
+  height: 20px;
+}
+.chbx-container .chbx-txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.chbx-container a {
+  color: #1E3173;
+}
+
+.form-button {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(30, 49, 115, 0.3);
+  background-color: lightblue;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#output {
+  color: red;
+  font-weight: 600;
+}
+
+.reg-btn-container {
+  border-radius: 48px;
+}
+.reg-btn-container button {
+  flex: 1;
+  border-radius: 48px;
+  border: none;
+  color: #fff;
+  padding: 3%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.not-active {
+  background: rgba(25, 59, 184, 0.3);
+}
+
+.active {
+  background: #1E3173;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  gap: 2%;
+}
+.login-container #registered {
+  color: #000;
+  text-decoration: none;
+}
+.login-container #login {
+  color: #1E3173;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
