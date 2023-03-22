@@ -202,7 +202,6 @@ main .main-section .main-title-background {
   padding: 0 2%;
 }
 .suc-main .rating .all-suc-cards .suc-card .suc-card img {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -253,7 +252,7 @@ main .main-section .main-title-background {
   justify-content: center;
   gap: 2%;
 }
-.gallery-section .wide-pic {
+.gallery-section .gallery-all-cards .wide-pic {
   position: relative;
   width: 60%;
   height: 342px;
@@ -265,7 +264,7 @@ main .main-section .main-title-background {
   flex-shrink: 3;
   flex-grow: 2;
 }
-.gallery-section .narrow-pic {
+.gallery-section .gallery-all-cards .narrow-pic {
   position: relative;
   width: 358px;
   min-width: 350px;
@@ -281,7 +280,6 @@ main .main-section .main-title-background {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 5%;
-  min-inline-size: -webkit-max-content;
   min-inline-size: -moz-max-content;
   min-inline-size: max-content;
   font-weight: 600;
