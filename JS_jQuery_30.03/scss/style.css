@@ -1,0 +1,20 @@
+header, main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+
+.user_section {
+  width: 90%;
+}
+
+.col {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
