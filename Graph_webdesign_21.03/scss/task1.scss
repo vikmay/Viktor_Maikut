@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        h2 {
+            margin: 8% 0;
+        }
+
+        span {
+            width: min-content;
+            font-size: 16px;
+            font-weight: 800;
+            white-space: nowrap;
+            margin: auto;
+        }
+    }
+}
+
+.fruits_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width: 470px) and (max-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 00px;
+        align-items: center;
+        padding: 20% 4%;
+        border: 1px solid gray;
+        border-radius: 20px;
+    }
+}
