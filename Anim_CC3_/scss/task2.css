@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  perspective: 800px;
+  perspective-origin: center;
+}
+
+.window-part {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  background-color: #790b0b;
+  border: 2px solid #560707;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+span {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.window:hover .left {
+  transform: rotateY(60deg);
+}
+
+.window:hover .right {
+  transform: rotateY(-60deg);
+}/*# sourceMappingURL=task2.css.map */

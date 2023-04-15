@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.img_container {
+  overflow: hidden;
+}
+
+.block img {
+  max-width: 300px;
+  max-height: 200px;
+  transition: transform 1s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  max-width: 300px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+}
+
+.block:hover img {
+  transform: scale(1.5);
+}
+
+.block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 300;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+}
+
+.block:hover::before {
+  opacity: 1;
+}/*# sourceMappingURL=task3.css.map */
