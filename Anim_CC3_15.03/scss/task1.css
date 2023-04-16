@@ -2,6 +2,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body {
   height: 100vh;
   background-color: #f0f0f0;
 }
@@ -26,8 +29,8 @@ body {
 .hour-hand {
   width: 34%;
   height: 3px;
-  margin-top: -1.5px;
-  margin-left: -1.5px;
+  margin-top: 1.5px;
+  margin-left: 1.5px;
   animation: rotate-hour 72s linear infinite;
 }
 

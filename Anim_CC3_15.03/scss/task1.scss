@@ -1,14 +1,23 @@
-body {
+%flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+$clock-size: 200px;
+$hour-margin: 1.5px;
+$minute-margin: -1px;
+
+    
+
+body {
+    @extend %flex-center;
     height: 100vh;
     background-color: #f0f0f0;
 }
 
 .clock {
-    width: 200px;
-    height: 200px;
+    width: $clock-size;
+    height: $clock-size;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 50%;
     position: relative;
@@ -26,16 +35,16 @@ body {
 .hour-hand {
     width: 34%;
     height: 3px;
-    margin-top: -1.5px;
-    margin-left: -1.5px;
+    margin-top: $hour-margin;
+    margin-left: $hour-margin;
     animation: rotate-hour 72s linear infinite;
 }
 
 .minute-hand {
     width: 45%;
     height: 2px;
-    margin-top: -1px;
-    margin-left: -1px;
+    margin-top: $minute-margin;
+    margin-left: $minute-margin;
     animation: rotate-minute 6s linear infinite;
 }
 

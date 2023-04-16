@@ -1,36 +1,41 @@
-body {
+%flex-center {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
+$primary-width: 300px;
+
+body {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
 .block {
     position: relative;
     width: 600px;
-    height: 200px;
     max-height: 200px;
     display: flex;
     justify-content: center;
 }
+
 .img_container {
     overflow: hidden;
 }
 
 .block img {
-    max-width: 300px;
+    max-width: $primary-width;
     max-height: 200px;
     transition: transform 1s ease-out;
     object-fit: cover;
 }
 
 .title {
-    max-width: 300px;
+    max-width: $primary-width;
     flex: 1;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     background: lightgray;
 }
 

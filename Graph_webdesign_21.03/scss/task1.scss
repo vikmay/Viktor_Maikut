@@ -1,15 +1,25 @@
-body {
-    margin: 0;
+%flex-center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+%flex-column_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+$gap-margin:20px;
+
+body {
+    margin: 0;
+    @extend %flex-center;
+    flex-direction: column;
 
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex-column_center;
         width: 90%;
+
         h2 {
             margin: 8% 0;
         }
@@ -28,25 +38,26 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: $gap-margin;
     border-bottom: 1px solid gray;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: $gap-margin;
+    padding-bottom: $gap-margin;
 
     @media screen and (max-width: 800px) {
         grid-template-columns: repeat(4, 1fr);
     }
+
     @media screen and (min-width: 470px) and (max-width: 640px) {
         grid-template-columns: repeat(3, 1fr);
     }
+
     @media screen and (min-width: 320px) and (max-width: 480px) {
         grid-template-columns: repeat(2, 1fr);
     }
+
     div {
-        display: flex;
-        flex-direction: column;
+        @extend %flex-column_center;
         gap: 00px;
-        align-items: center;
         padding: 20% 4%;
         border: 1px solid gray;
         border-radius: 20px;

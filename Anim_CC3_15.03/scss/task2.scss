@@ -1,8 +1,12 @@
-body {
-    height: 100vh;
+%flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    height: 100vh;
+    @extend %flex-center;
 }
 
 .window {
