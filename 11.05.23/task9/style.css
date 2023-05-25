@@ -1,0 +1,32 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 800px;
+}
+
+th,
+td {
+  width: 500px;
+  padding: 8px;
+  text-align: start;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+tr {
+  display: flex;
+}
+
+.sort-asc::after {
+  content: ' ▲';
+}
+
+.sort-desc::after {
+  content: ' ▼';
+}

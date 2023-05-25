@@ -1,0 +1,38 @@
+.gallery {
+  width: 600px;
+  height: 250px;
+  object-fit: contain;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  ;
+}
+
+.buttons button {
+  margin: 0 5px;
+  font-size: 24px;
+  color: gray;
+ 
+}
+
+#previousBtn {
+  position: absolute;
+  left: 0;
+
+}
+
+#nextBtn {
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Палітра кольорів</h1>
+
+  <form id="color-form">
+    <label for="color-name">Назва:</label>
+    <input type="text" id="color-name" required><br>
+
+    <label for="color-type">Тип:</label>
+    <select id="color-type">
+      <option value="RGB">RGB</option>
+      <option value="RGBA">RGBA</option>
+      <option value="HEX">HEX</option>
+    </select><br>
+
+    <label for="color-code">Код кольору:</label>
+    <input type="text" id="color-code" required><br>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <h2>Кольори:</h2>
+  <ul id="color-list"></ul>
+    <script src="index.js"></script>
+</body>
+
+</html>
