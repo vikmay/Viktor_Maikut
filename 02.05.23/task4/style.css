@@ -1,0 +1,14 @@
+.news-container {
+  margin-bottom: 20px;
+}
+
+.news-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 10px auto;
+}
