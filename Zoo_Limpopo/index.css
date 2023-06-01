@@ -1,0 +1,14 @@
+header {
+  background-size: cover;
+}
+header a {
+  color: #FFFFFF;
+}
+
+.hero_section {
+  background-image: url("./img/hero-background.png");
+}
+
+.header__phone span {
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
