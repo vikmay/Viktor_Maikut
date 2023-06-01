@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="d-flex justify-content-center ">
+    <div class="header_wrapper d-flex align-items-center">
+      <div><img class="logo_container" src="./img/logo.png" alt=""> </div>
+      <div class="nav_wrapper">
+        <ul class="d-flex flex-wrap justify-space-between">
+          <li id="home"><a class="tab" href="./index.html">Home</a></li>
+          <li id="homework"><a class="tab" href="./index2.html">Homework</a></li>
+          <li id="settings"><a href="./index3.html">Settings</a></li>
+        </ul>
+      </div>
+      <div class="user__logo"><img src="./img/av_64.png" alt=""></div>
+    </div>
+  </header>
+  <main class="d-flex align-items-center justify-content-center">
+    <section class="setting_section d-flex flex-column align-items-center">
+      <h2 class="align-self-center my-4">Settings</h2>
+      <div class="settings_list_container d-flex py-2 my-4">
+        <ul class="d-flex justify-content-evenly">
+          <li>AVATAR</li>
+          <li>STUDENTS'S INFO</li>
+          <li>CHANGE PASSWORD</li>
+        </ul>
+      </div>
+      <div class="user_wrapper d-flex flex-wrap gap-3 justify-content-evenly">
+        <div class="img_container d-flex flex-column align-items-center">
+          <div class="avatar_title">AVATAR</div>
+          <img src="./img/av_256.png" alt="">
+          <button class="btn-secondary">Choose photo</button>
+        </div>
+        <div class="user_info_container">
+          <form class="d-flex flex-column align-items-center gap-2" action="#">
+            <div class="avatar_title">STUDENTS' INFO</div>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Phone number">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="FB link">
+            <button class="btn-secondary">Save changes</button>
+          </form>
+        </div>
+        <div class="password_container">
+          <form class="d-flex flex-column gap-2 align-items-center" action="#">
+            <div class="avatar_title">CHANGE PASSWORD</div>
+            <input type="text" placeholder="Old password">
+            <input type="text" placeholder="New password">
+            <input type="text" placeholder="Repeat password">
+            <button class="btn-secondary">Change password</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
