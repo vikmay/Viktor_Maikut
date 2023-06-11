@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OMDB Movie Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Search:</h2>
+            <form id="searchForm" class="search-form">
+                <div class="search_wrappers">
+                    <label for="searchInput">Title:</label>
+                    <input type="text" id="searchInput" class="search-input">
+                </div>
+                <div class="search_wrappers">
+                    <label for="typeselect">Type:</label>
+                    <select id="typeSelect" class="type-select">
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+            
+                <div id="results" class="results"></div>
+                <div id="pagination" class="pagination"></div>
+                <div id="details" class="details"></div>
+            
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
