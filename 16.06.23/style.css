@@ -123,6 +123,14 @@ label {
   background: #909090;
 }
 
+.details-title {
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
 #details {
   width: 100%;
   display: flex;
@@ -235,7 +243,6 @@ input:-webkit-autofill {
     align-items: center;
     margin-top: 1rem;
   }
-
 
 }
 

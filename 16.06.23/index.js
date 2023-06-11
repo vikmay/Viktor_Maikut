@@ -72,10 +72,11 @@ function getMovieDetails(id) {
             apiKey: "939b435f"
         },
         success: function (result) {
-            let htmlString = `<img src="${result.Poster}" alt="${result.Title}" class="movie-poster-large">`;
+            let htmlString = `<h3 class="details-title">Film info:</h3>`;
 
             htmlString +=
-                `<div class="details-info-wrapper">
+            `<img src="${result.Poster}" alt="${result.Title}" class="movie-poster-large">
+            <div class="details-info-wrapper">
                <div><strong>Title:</strong></div><div>${result.Title}</div>
                <div><strong>Released:</strong></div><div>${result.Released}</div>
                <div><strong>Genre:</strong></div><div>${result.Genre}</div>
@@ -84,7 +85,7 @@ function getMovieDetails(id) {
                <div><strong>Writer:</strong></div><div>${result.Writer}</div>
                <div><strong>Actors:</strong></div><div>${result.Actors}</div>
                <div><strong>Awards:</strong></div><div>${result.Awards}</div>
-               </div>`;
+            </div>`;
             $("#details").html(htmlString);
         }
     });
