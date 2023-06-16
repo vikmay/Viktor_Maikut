@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded',  () => {
     const swiper2 = new Swiper('.swiper2', {
         direction: 'horizontal',
         slidesPerView: 2,
-        spaceBetween:700,
+        spaceBetween:450,
         loop: true,
         pagination: {
             el: '.swiper-pagination',

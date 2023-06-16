@@ -1,0 +1,850 @@
+$primary-text-color: white;
+$btn-small-card-color: #E3B748;
+$bg-color: #111;
+$bg-second-color: #1e1e1e;
+$dark-hover-color: #2E2E2E;
+$text-hover-color: #373737;
+$link-color: #000;
+$page-width: 80%;
+$small-scale: scale(1.1);
+$primary-opacity: 0.3;
+$second-opacity: 0.1;
+$card-line-height: 24px;
+$text-line-height: 162.52%;
+$title-fsize: 54px;
+$card-font-size: 24px;
+$sm-txt-fsize: 18px;
+$primary-font-weight: 600;
+$smaller-font-weight: 500;
+$primary-padding: 10%;
+$small-padding: 3%;
+$primary-border-radius: 8px;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    margin: 0;
+}
+
+.white-black {
+    color: $primary-text-color;
+    background-color: $bg-color;
+}
+
+.white-grey {
+    color: $primary-text-color;
+    background-color: $bg-second-color;
+}
+
+.active-card {
+    background-color: $dark-hover-color;
+}
+
+main {
+    @extend %flex-column;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: $bg-color;
+
+    /* header */
+    header {
+        width: $page-width;
+        height: 11rem;
+        @extend %flex-center;
+        flex-wrap: wrap;
+        padding-top: 2%;
+
+        .nav-container {
+            margin: auto;
+            padding-right: $small-padding;
+
+            .nav {
+                display: inline-flex;
+                gap: 29px;
+                padding-inline-start: 3px;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: $primary-text-color;
+                    }
+                }
+            }
+
+        }
+
+        .contact button {
+            width: 172px;
+            height: 47px;
+            border: solid 2px;
+            background-color: $bg-color;
+
+            &:hover {
+                background-color: $primary-text-color;
+                color: $bg-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    /* main-section */
+    .main-section {
+        width: $page-width;
+        @extend %flex-wrapper;
+        justify-content: center;
+
+        .text-section {
+            @extend %flex-column;
+            flex: 1;
+
+            .title-top-text {
+
+                h1 {
+                    display: inline-block;
+                    font-size: 66px;
+                    font-weight: $smaller-font-weight;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .title-text {
+                width: 87%;
+                opacity: $primary-opacity;
+                font-size: $sm-txt-fsize;
+                line-height: $text-line-height
+            }
+
+            .input-container {
+                display: grid;
+                position: relative;
+                width: 65%;
+                min-width: 320px;
+                margin: 8% 0;
+
+                input {
+                    display: flex;
+                    opacity: $second-opacity;
+                    border-radius: 43px;
+                    padding: 27px 37% 27px 14%;
+                }
+
+                img {
+                    object-fit: contain;
+                    position: absolute;
+                    top: 25px;
+                    left: 27px;
+                    opacity: $second-opacity;
+                }
+            }
+
+            .email-btn {
+                position: absolute;
+                right: 10px;
+                top: 27px;
+
+                a:hover {
+                    background-color: #dfa410;
+                }
+
+                a {
+                    color: $link-color;
+                    font-weight: $primary-font-weight;
+                    background: $btn-small-card-color;
+                    padding: 21px 33px;
+                    border-radius: 43px;
+
+                    :hover {
+                        background-color: #dfa410;
+                    }
+                }
+            }
+        }
+
+        .main-title-background {
+            width: 468px;
+            height: 651px;
+            background-image: url(../img/Man.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+
+/* Rating Section */
+.suc-main {
+    @extend %flex-center;
+    border-bottom: solid #1e1e1e 3px;
+
+    .rating {
+        width: $page-width;
+
+        .success-intro {
+            @extend %flex-wrapper;
+            padding: $primary-padding 0;
+
+            .suc-title {
+                width: 50%;
+                flex: 1;
+
+                font-size: $title-fsize;
+                font-weight: $primary-font-weight;
+                line-height: 87.22px;
+            }
+
+            .suc-desc {
+                width: 50%;
+                min-width: 254px;
+                @extend %flex-center;
+                flex: 1;
+                border-left: 1px solid #6A6A6A;
+
+                .suc-desc-title {
+                    max-width: $page-width;
+                    @extend %flex-column;
+                    justify-content: center;
+
+                    font-size: 32px;
+                    font-weight: $primary-font-weight;
+                    line-height: $text-line-height
+                }
+
+                .suc-desc-text {
+                    padding-top: $small-padding;
+
+                    font-size: $sm-txt-fsize;
+                    font-weight: $smaller-font-weight;
+                    line-height: $text-line-height;
+                    opacity: $primary-opacity;
+                }
+            }
+        }
+
+        .suc-cards-title {
+            text-align: center;
+            padding-bottom: 40px;
+
+            font-weight: $primary-font-weight;
+            font-size: $title-fsize;
+            line-height: 143.02%;
+        }
+
+        .all-suc-cards {
+            @extend %flex-wrapper;
+            justify-content: space-between;
+            gap: 30px;
+            padding-bottom: $primary-padding;
+
+            .suc-card {
+                min-width: 270px;
+                height: 377px;
+                @extend %flex-column;
+                flex: 1;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                border: 1.4px solid rgba(255, 255, 255, 0.1);
+                border-radius: 14px;
+                padding: 0 2%;
+
+                .suc-card img {
+                    width: fit-content;
+                }
+
+                .suc-card-name {
+                    font-weight: $primary-font-weight;
+                    font-size: $card-font-size;
+                    line-height: $card-line-height;
+                }
+
+                .suc-card-text {
+                    font-weight: $smaller-font-weight;
+                    font-size: 14px;
+                    line-height: $text-line-height;
+                    opacity: $primary-opacity;
+                }
+
+                .suc-btn {
+                    width: 121px;
+                    height: 43px;
+                    background: $btn-small-card-color;
+                    border-radius: 23.5px;
+                    border-width: 0;
+
+                    &:hover {
+                        background-color: #dfa410;
+                        transform: $small-scale;
+                    }
+                }
+
+                &:hover {
+                    background-color: $dark-hover-color;
+                    cursor: pointer;
+                    transform: $small-scale;
+                }
+            }
+
+            .active-card {
+                background-color: $dark-hover-color;
+            }
+
+        }
+    }
+}
+
+/* Gallery section */
+.gallery-section {
+    width: $page-width;
+    @extend %flex-column;
+    align-items: center;
+    background-color: #1d1d1d;
+
+    .gallery-title {
+        display: flex;
+        justify-content: center;
+        font-size: $title-fsize;
+        padding-bottom: 60px;
+    }
+
+    .gallery-all-cards {
+        @extend %flex-wrapper;
+        justify-content: center;
+        gap: 2%;
+
+        .wide-pic {
+            position: relative;
+            width: 60%;
+            height: 342px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 14px;
+            margin-bottom: 2%;
+            min-width: 351px;
+            flex-shrink: 3;
+            flex-grow: 2;
+        }
+
+        .narrow-pic {
+            position: relative;
+            width: 358px;
+            min-width: 350px;
+            height: 342px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 14px;
+            margin-bottom: 2.5%;
+            flex: 1;
+        }
+    }
+
+    .gallery-card-name {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 5%;
+        min-inline-size: max-content;
+
+        font-weight: $primary-font-weight;
+        font-size: $card-font-size;
+        line-height: $card-line-height;
+    }
+
+    .business {
+        background-image: url(../img/Business\ law.png);
+    }
+
+    .partnership {
+        background-image: url(../img/Partnership_Law.png);
+    }
+
+    .real {
+        background-image: url(../img/Real\ estat\ law.png);
+    }
+
+    .business-law {
+        background-image: url(../img/Business_law.png);
+    }
+
+    .landlord {
+        background-image: url(../img/Landlord\ disputes.png);
+    }
+
+    .elder {
+        background-image: url(../img/elder\ abuse.png);
+    }
+}
+
+/* Clients Section */
+.clients-section {
+    width: $page-width;
+
+    .clients-cards-title {
+        padding-bottom: 40px;
+
+        font-weight: $primary-font-weight;
+        font-size: $title-fsize;
+        line-height: 77.23px;
+    }
+
+    .all-clients-cards {
+        @extend %flex-wrapper;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: $primary-padding;
+
+        .client-card {
+            min-width: 270px;
+            height: 377px;
+            position: relative;
+            @extend %flex-column;
+            flex: 1;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            border: 1.4px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 0 2%;
+
+            &:hover {
+                background-color: $dark-hover-color;
+                cursor: pointer;
+                transform: $small-scale;
+            }
+
+            .client-card-name {
+                font-weight: $primary-font-weight;
+                font-size: $card-font-size;
+                line-height: $card-line-height;
+                padding-bottom: $primary-padding;
+            }
+
+            .client-card-activity {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: $card-line-height;
+            }
+
+            .client-card-text {
+                max-width: 456px;
+                font-weight: $smaller-font-weight;
+                font-size: 14px;
+                line-height: $text-line-height;
+                opacity: $primary-opacity;
+            }
+
+            .quot-mark {
+                position: absolute;
+                right: 10%;
+                top: 10%;
+            }
+
+        }
+    }
+}
+
+/* Team Section */
+.team-section {
+    width: 83%;
+    padding-bottom: $primary-padding;
+
+    .team-cards-title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+
+        font-weight: $primary-font-weight;
+        font-size: $title-fsize;
+        line-height: 77.23px;
+    }
+
+    .all-team-cards {
+        @extend %flex-wrapper;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+
+        .team-card {
+            width: 335px;
+            min-width: 290px;
+            height: 109px;
+            display: grid;
+            position: relative;
+            align-items: center;
+            flex-grow: 1;
+            flex-basis: 27%;
+            border-radius: 14px;
+
+            &:hover {
+                background: $btn-small-card-color;
+                cursor: pointer;
+                color: $text-hover-color;
+                transform: $small-scale;
+
+                .num-of-cases {
+                    opacity: unset;
+                }
+            }
+
+            img {
+                position: absolute;
+                left: 20px;
+                top: 17px;
+            }
+
+            .team-card-name {
+                padding-left: 31%;
+
+                font-weight: $primary-font-weight;
+                font-size: $card-font-size;
+                line-height: $card-line-height;
+            }
+
+            .num-of-cases {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: $card-line-height;
+                opacity: $primary-opacity;
+            }
+
+        }
+
+        .activ-yellow {
+            background: $btn-small-card-color;
+            color: $text-hover-color;
+
+            .num-of-cases {
+                opacity: unset;
+            }
+        }
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    width: $page-width;
+    @extend %flex-wrapper;
+    padding-bottom: $primary-padding;
+
+    .faq-title {
+        min-width: 100%;
+        flex: 1;
+
+        font-size: $title-fsize;
+        font-weight: $primary-font-weight;
+        line-height: 87.22px;
+    }
+
+    .faq-title-container {
+        width: 50%;
+        flex-grow: 1;
+        padding-bottom: $primary-padding;
+
+        .faq-title-text {
+            display: block;
+            width: 79%;
+        }
+    }
+
+    .faq-questions {
+        width: 50%;
+        min-width: 326px;
+        height: 540px;
+        @extend %flex-column;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+
+        .first-question {
+            font-weight: $primary-font-weight;
+            font-size: $card-font-size;
+            line-height: $card-line-height;
+            padding-bottom: 5%;
+
+            .first-question-text {
+                padding-top: 5%;
+            }
+        }
+
+        .quest-style {
+            width: 100%;
+            height: 114px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: $primary-font-weight;
+            font-size: $card-font-size;
+            line-height: $card-line-height;
+            border-top: 2px solid #6A6A6A;
+        }
+
+        .quest-style img {
+            max-width: 28px;
+            max-height: 28px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.5);
+            }
+        }
+
+        .faq-text-style {
+            font-size: $sm-txt-fsize;
+            font-weight: $smaller-font-weight;
+            line-height: $text-line-height;
+            opacity: $primary-opacity;
+        }
+    }
+}
+
+/* Subscribe section */
+.subscribe-section {
+    width: 85%;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+
+    background: rgba(71, 71, 71, 0.5);
+
+    .subscribe-container {
+        width: 61%;
+        @extend %flex-center;
+        flex-direction: column;
+
+        .subscribe-title {
+            font-family: 'Helvetica Now Display';
+            font-style: normal;
+            font-weight: $smaller-font-weight;
+            font-size: 55px;
+            line-height: 137%;
+        }
+
+        .sub-input-container {
+            width: 158%;
+            @extend %flex-wrapper;
+            justify-content: center;
+            gap: 1%;
+
+            color: #818181;
+
+            input {
+                width: 276px;
+                height: 53px;
+                padding: 0;
+                border: 0;
+            }
+        }
+
+        .sub-name-input {
+            @extend %flex-center;
+            margin-bottom: 1%;
+
+            input {
+                border-radius: 8px 0px 0px 8px;
+                padding-inline-start: $primary-padding;
+
+                @media screen and (max-width:832px) {
+                    border-radius: $primary-border-radius;
+                    flex: 1;
+                }
+            }
+        }
+
+        .sub-email-input {
+            width: 276px;
+            height: 53px;
+            @extend %flex-center;
+            margin-bottom: 1%;
+
+            input {
+                padding-inline-start: 5%;
+
+                @media screen and (max-width:832px) {
+                    border-radius: $primary-border-radius;
+                    flex: 1;
+                }
+            }
+        }
+
+        .sub-send-btn {
+            min-width: 116px;
+            max-width: 276px;
+            height: 53px;
+            @extend %flex-center;
+
+            background: $btn-small-card-color;
+            border-radius: 0px 8px 8px 0px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 137%;
+
+            @media screen and (max-width:832px) {
+                border-radius: $primary-border-radius;
+                flex: 1;
+            }
+
+            a {
+                color: $link-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Footer */
+footer {
+    width: $page-width;
+    height: 13rem;
+    @extend %flex-wrapper;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-foot-container {
+        margin: auto;
+        padding-right: $small-padding;
+
+        .nav {
+            display: inline-flex;
+            gap: 29px;
+            padding-inline-start: 3px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+
+    .global {
+        display: flex;
+        gap: 20%;
+        padding-right: $primary-padding;
+    }
+}
+
+.bottom-info {
+    display: flex;
+    font-family: 'Helvetica Now Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary-text-color;
+    padding-bottom: 64px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: $primary-text-color;
+        }
+    }
+}
+
+@media screen and (min-width:270px) and (max-width:380px) {
+
+    main header .nav-container {
+        .nav {
+            gap: 15px;
+        }
+    }
+
+    main .main-section .text-section {
+        .title-top-text h1 {
+            display: inline-block;
+            font-size: 48px;
+            font-weight: 500;
+            margin-left: 10%;
+        }
+
+        .title-text {
+            margin-left: 10%;
+        }
+
+        .input-container {
+            min-width: 300px;
+
+            img {
+                left: 4%;
+            }
+        }
+
+    }
+
+    .suc-main .rating .all-suc-cards .suc-card {
+        min-width: 235px;
+    }
+
+    .clients-section .all-clients-cards .client-card {
+        min-width: 230px;
+    }
+
+    .team-section .all-team-cards .team-card {
+        min-width: 250px;
+
+        .team-card-name {
+            padding-left: 44%;
+        }
+    }
+
+    .gallery-section .gallery-all-cards {
+        .narrow-pic {
+            min-width: 230px;
+            width: 303px;
+        }
+
+        .wide-pic {
+            min-width: 230px;
+            width: 303px;
+        }
+    }
+
+    footer {
+        .global {
+            padding-right: 80px;
+        }
+        .nav-foot-container .nav {
+            gap: 15px;
+        }
+    }
+
+    .faq-section .faq-questions {
+        min-width: 270px;
+        .first-question {
+            margin-right: 5%;
+        }
+    }
+    .bottom-info ul {
+        margin-right: 15%;
+    }
+}
