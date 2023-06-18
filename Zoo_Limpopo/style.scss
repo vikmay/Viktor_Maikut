@@ -16,7 +16,6 @@ body {
     background: $primary-bg-color;
     overflow-x: hidden;
     position: relative;
-
 }
 
 header {
@@ -50,7 +49,6 @@ header {
             top: 50%;
             left: 50%;
         }
-
     }
 
     .change-lang {
@@ -108,18 +106,14 @@ header {
     border-radius: 50%;
 
     span:first-child {
-
         background: #F3673F;
-
         transform: rotate(45deg) translate(-5px, 18px);
-
     }
 
     span:nth-child(2) {
         background: #F3673F;
         transform: translateX(4vw);
         opacity: 0;
-
     }
 
     span:last-child {
@@ -141,7 +135,6 @@ header {
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 42px;
-
     }
 
     li a {
@@ -172,13 +165,11 @@ header {
         font-size: 20px;
         font-weight: 600;
         white-space: nowrap;
-
     }
 
     img {
         width: 42px;
     }
-
 }
 
 .hero_section {
@@ -266,8 +257,6 @@ header {
             margin-bottom: 25px;
             margin-left: 75%;
             z-index: 0;
-
-
         }
     }
 
@@ -419,7 +408,6 @@ header {
     margin-top: 10% !important;
     z-index: 0;
 
-
     .patron_card_wrapper {
         width: 100%;
     }
@@ -455,7 +443,6 @@ header {
         .card__text {
             width: 130%;
         }
-
     }
 
     .arrow_btn_container {
@@ -542,12 +529,9 @@ header {
         @media screen and (max-width: 550px) {
             width: 100%;
         }
-
-
     }
 
     .lemur_img {
-
         position: absolute;
         bottom: 150px;
         right: 0;
@@ -560,8 +544,6 @@ header {
         bottom: 150px;
         right: 0;
         width: 50%;
-
-
     }
 }
 
@@ -713,6 +695,10 @@ header {
             justify-content: center;
         }
 
+        .logo_container {
+            margin-bottom: 20px;
+        }
+
         .nav_container {
             display: flex;
             flex-direction: column;
@@ -723,6 +709,7 @@ header {
             font-size: 24px;
             line-height: 32px;
             gap: 1rem;
+            margin-bottom: 40px;
         }
 
         .phone_social_container {
@@ -826,7 +813,6 @@ header {
         align-items: center;
         height: fit-content;
         flex-direction: column;
-
     }
 }
 
