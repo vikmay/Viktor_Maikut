@@ -692,17 +692,26 @@ header {
     flex-direction: column;
     align-items: center;
     background-image: url('./assets/background/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
     margin-top: 10%;
     color: #FFFFFF;
-  
+
 
     .footer_container {
         width: 80%;
+        min-height: 500px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-    
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 665px) {
+            justify-content: center;
+        }
 
         .nav_container {
             display: flex;
@@ -722,6 +731,9 @@ header {
             align-items: flex-end;
             gap: 1rem;
 
+            @media screen and (max-width: 665px) {
+                align-items: center;
+            }
 
             .phone {
                 font-family: 'Comfortaa';
@@ -729,6 +741,22 @@ header {
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 36px;
+                text-align: right;
+
+                @media screen and (max-width: 440px) {
+                    font-size: 24px;
+                }
+            }
+
+            .address {
+                width: 60%;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                /* or 125% */
+
                 text-align: right;
             }
 
