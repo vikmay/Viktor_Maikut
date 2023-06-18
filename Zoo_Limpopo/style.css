@@ -273,7 +273,7 @@ header .burger__menu button :last-child {
 }
 .top_hero_section .hero_anim_container {
   position: absolute;
-  top: 1%;
+  top: 2%;
   right: 0;
 }
 .top_hero_section .hero_bg_prim img {
@@ -410,6 +410,10 @@ header .burger__menu button :last-child {
   background: #FFDB00;
   border-radius: 64px;
   padding: 5%;
+  background-image: url("./assets/img/Leaf_right.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 30%;
 }
 .lemur_section .lemur_title {
   font-family: "Raleway";
@@ -465,16 +469,10 @@ header .burger__menu button :last-child {
 }
 .lemur_section .lemur_img {
   position: absolute;
-  bottom: 150px;
+  bottom: 200px;
   right: 0;
   width: 50%;
   z-index: 1;
-}
-.lemur_section .leaf_img {
-  position: absolute;
-  bottom: 150px;
-  right: 0;
-  width: 50%;
 }
 
 .visitors_section {
