@@ -580,6 +580,14 @@ header .burger__menu button :last-child {
   line-height: 64px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 450px) {
+  .map .map_title_container h3 {
+    font-size: 15vw;
+  }
+}
+.map .map_container img {
+  width: 80vw;
+}
 
 .footer_wrapper {
   width: 100%;
@@ -596,7 +604,7 @@ header .burger__menu button :last-child {
 }
 .footer_wrapper .footer_container {
   width: 80%;
-  min-height: 500px;
+  min-height: 520px;
   display: flex;
   justify-content: space-between;
   align-items: center;

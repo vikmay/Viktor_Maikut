@@ -660,7 +660,13 @@ header {
             font-size: 72px;
             line-height: 64px;
             color: #FFFFFF;
+            @media screen and (max-width: 450px) {
+                font-size: 15vw;
+            }
         }
+    }
+    .map_container img {
+        width: 80vw;
     }
 }
 
@@ -681,7 +687,7 @@ header {
 
     .footer_container {
         width: 80%;
-        min-height: 500px;
+        min-height: 520px;
         display: flex;
         justify-content: space-between;
         align-items: center;
