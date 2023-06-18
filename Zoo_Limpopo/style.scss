@@ -6,8 +6,13 @@ $primary-bg-color: linear-gradient(180deg, #00A510 0%, rgba(0, 165, 16, 0.78) 18
 $primary-color: #FFFFFF;
 $btn-color: linear-gradient(90deg, #F3673F 0%, #F29C2C 100%);
 
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
-    height: 10000px;
     background: $primary-bg-color;
     overflow-x: hidden;
     position: relative;
@@ -413,7 +418,7 @@ header {
     width: 100%;
     margin-top: 10% !important;
     z-index: 0;
-   
+
 
     .patron_card_wrapper {
         width: 100%;
@@ -446,6 +451,7 @@ header {
             font-size: 36px;
             line-height: 64px;
         }
+
         .card__text {
             width: 130%;
         }
@@ -461,6 +467,279 @@ header {
         #left_arrow_btn {
             transform: rotate(180deg);
         }
+    }
+}
+
+.lemur_section {
+    width: 100%;
+    @extend %flex-center;
+    margin-top: 13%;
+
+    .lemur_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 90%;
+        background: #FFDB00;
+        border-radius: 64px;
+        padding: 5%;
+    }
+
+    .lemur_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    .lemur_advert {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .lemur_list {
+        list-style-position: inside;
+        padding-left: 0;
+
+        li {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+
+    .lemur_text {
+        width: 50%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .lemur_btn {
+        width: 45%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+
+        background: linear-gradient(90deg, #F46141 2.43%, #F29E2B 100%);
+        border-radius: 32px;
+        border: none;
+        color: #FFFFFF;
+        padding: 20px 50px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+        }
+
+
+    }
+
+    .lemur_img {
+
+        position: absolute;
+        bottom: 150px;
+        right: 0;
+        width: 50%;
+        z-index: 1;
+    }
+
+    .leaf_img {
+        position: absolute;
+        bottom: 150px;
+        right: 0;
+        width: 50%;
+
+
+    }
+}
+
+.visitors_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+
+    .visitors_title_wrapper {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+
+        .visitors_title {
+            display: flex;
+            width: 100%;
+            color: #FFFFFF;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 64px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 11vw;
+                justify-content: center;
+            }
+        }
+    }
+
+    .visitors_container {
+        width: 85%;
+        @extend %flex-center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 4rem;
+
+
+        .visitors_container_items {
+            @extend %flex-center;
+            justify-content: start;
+            flex-basis: 45%;
+            gap: 8%;
+
+            @media screen and (max-width: 1000px) {
+                flex-basis: 100%;
+            }
+
+
+        }
+
+        .visit_img_container {
+            width: fit-content;
+            display: flex;
+
+            img {
+                @media screen and (max-width: 1000px) {
+                    width: 20vw;
+                }
+            }
+        }
+
+        .title_text_container {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            gap: 1rem;
+        }
+
+        .visitors_item_title {
+            color: #FFFFFF;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .visitors_item_text {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.branch_img_container {
+    margin-top: 10%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+
+    .map_title_container {
+        width: 80%;
+        margin-bottom: 5%;
+
+        h3 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 64px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.footer_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./assets/background/footer.png');
+    margin-top: 10%;
+    color: #FFFFFF;
+  
+
+    .footer_container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+
+        .nav_container {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            gap: 1rem;
+        }
+
+        .phone_social_container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+
+
+            .phone {
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                text-align: right;
+            }
+
+            .socials {
+                width: fit-content;
+                display: flex;
+                justify-content: end;
+                gap: 2rem;
+            }
+        }
+
     }
 }
 
